@@ -45,11 +45,11 @@ class OrderController extends BaseController{
             <th>Note</th>
           </tr>
             <tr>
-              <td>$order->id</td>
-              <td>". $user['email'] ."</td>
-              <td> ". date_format($order->date, 'd/m/y') . "</td>
-              <td>$order->total</td>
-              <td>$order->note</td>
+              <td>" . htmlentities($order->id) . "</td>
+              <td>". htmlentities($user['email']) ."</td>
+              <td> ". htmlentities(date_format($order->date, 'd/m/y')) . "</td>
+              <td>". htmlentities($order->total) ."</td>
+              <td>". htmlentities($order->note) ."</td>
             </tr>
         </table>
         ";
