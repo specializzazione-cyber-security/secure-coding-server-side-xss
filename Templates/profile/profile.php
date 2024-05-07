@@ -15,7 +15,7 @@
     <header class="container mt-5">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center display-1">Sono un profilo</h1>
+                <h1 class="text-center display-1">Il tuo profilo</h1>
                 <div class="col-6">
                     <h3>Modifica il tuo profilo</h3>
                     <form method="POST" action="/profile/update">
